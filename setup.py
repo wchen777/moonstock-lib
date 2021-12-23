@@ -7,7 +7,7 @@ setup(
     description='API for financial modeling and calculations.',
     author='Will Chen, Ankith Hiremath',
     license='MIT',
-    install_requires=['numpy'],
+    install_requires=['numpy', 'scipy'],
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
     test_suite='tests',
