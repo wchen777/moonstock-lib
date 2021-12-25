@@ -7,11 +7,14 @@ def black_scholes(S, K, r, sigma, T, option_type='call'):
     """
     Calculate the theoretical price of a call or put option using the Black-Scholes model
 
-    :param S: stock price
-    :param K: strike price
-    :param r: risk-free rate
-    :param sigma: volatility
-    :param T: time to maturity (based on 1 annum as unit)
+    Parameters
+    ----------
+
+    S: stock price
+    K: strike price
+    r: risk-free rate
+    sigma: volatility
+    T: time to maturity (based on 1 annum as unit)
     option_type: 'call' or 'put'
 
     :return: price of the call or put option (in dollars)
@@ -33,11 +36,14 @@ def delta_black_scholes(S, K, r, sigma, T, option_type='call'):
     Calculate the theoretical delta of a call or put option using the Black-Scholes model,
     or the total amount the option price is expected to move based on a $1 change in the underlying security.
 
-    :param S: stock price
-    :param K: strike price
-    :param r: risk-free rate
-    :param sigma: volatility
-    :param T: time to maturity (based on 1 annum as unit)
+    Parameters
+    ----------
+
+    S: stock price
+    K: strike price
+    r: risk-free rate
+    sigma: volatility
+    T: time to maturity (based on 1 annum as unit)
     option_type: 'call' or 'put'
 
     :return: delta of the call or put option (in dollars)
@@ -58,11 +64,14 @@ def gamma_black_scholes(S, K, r, sigma, T, option_type='call'):
     Calculate the theoretical gamma of a call or put option using the Black-Scholes model,
     or rate of change of the delta.
 
-    :param S: stock price
-    :param K: strike price
-    :param r: risk-free rate
-    :param sigma: volatility
-    :param T: time to maturity (based on 1 annum as unit)
+    Parameters
+    ----------
+
+    S: stock price
+    K: strike price
+    r: risk-free rate
+    sigma: volatility
+    T: time to maturity (based on 1 annum as unit)
     option_type: 'call' or 'put'
 
     :return: gamma of the call or put option (in dollars)
@@ -83,11 +92,14 @@ def vega_black_scholes(S, K, r, sigma, T, option_type='call'):
     Calculate the theoretical vega of a call or put option using the Black-Scholes model, or
     the amount the option price is expected to change based on a $1 change in the volatility.
 
-    :param S: stock price
-    :param K: strike price
-    :param r: risk-free rate
-    :param sigma: volatility
-    :param T: time to maturity (based on 1 annum as unit)
+    Parameters
+    ----------
+
+    S: stock price
+    K: strike price
+    r: risk-free rate
+    sigma: volatility
+    T: time to maturity (based on 1 annum as unit)
     option_type: 'call' or 'put'
 
     :return: vega of the call or put option (in dollars)
@@ -108,11 +120,14 @@ def theta_black_scholes(S, K, r, sigma, T, option_type='call'):
     Calculate the theoretical theta of a call or put option using the Black-Scholes model,
     or the the time decay of an option, the dollar amount an option will lose each day due to the passage of time.
 
-    :param S: stock price
-    :param K: strike price
-    :param r: risk-free rate
-    :param sigma: volatility
-    :param T: time to maturity (based on 1 annum as unit)
+    Parameters
+    ----------
+
+    S: stock price
+    K: strike price
+    r: risk-free rate
+    sigma: volatility
+    T: time to maturity (based on 1 annum as unit)
     option_type: 'call' or 'put'
 
     :return: theta of the call or put option (in dollars)
@@ -133,11 +148,14 @@ def rho_black_scholes(S, K, r, sigma, T, option_type='call'):
     Calculate the theoretical rho of a call or put option using the Black-Scholes model,
     or the amount the option price changes relative to a unit change in the risk-free rate of interest.
 
-    :param S: stock price
-    :param K: strike price
-    :param r: risk-free rate
-    :param sigma: volatility
-    :param T: time to maturity (based on 1 annum as unit)
+    Parameters
+    ----------
+
+    S: stock price
+    K: strike price
+    r: risk-free rate
+    sigma: volatility
+    T: time to maturity (based on 1 annum as unit)
     option_type: 'call' or 'put'
 
     :return: rho of the call or put option (in dollars)
@@ -158,10 +176,10 @@ def rho_black_scholes(S, K, r, sigma, T, option_type='call'):
 #     """
 #     Calculate the implied volatility of a call or put option using the Black-Scholes model.
 
-#     :param S: stock price
-#     :param K: strike price
-#     :param r: risk-free rate
-#     :param T: time to maturity (based on 1 annum as unit)
+#     S: stock price
+#     K: strike price
+#     r: risk-free rate
+#     T: time to maturity (based on 1 annum as unit)
 #     option_type: 'call' or 'put'
 #     option_price: option price (in dollars)
 #     option_delta: option delta (in dollars)
